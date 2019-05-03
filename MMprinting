@@ -1,0 +1,46 @@
+<?php
+$n = intval(readline());
+
+function printDash($num){
+    echo str_repeat('-', $num);
+}
+
+function printStar($num){
+    echo str_repeat('*', $num);
+}
+
+for ($i = 0; $i < $n / 2 ; $i++){
+    printDash(($n - $i));
+    printStar(($n + $i * 2));
+    printDash(($n - $i * 2));
+    printStar(($n + $i * 2));
+    printDash(($n * 2 - $i * 2));
+    printStar(($n + $i * 2));
+    printDash(($n - $i * 2));
+    printStar(($n + $i * 2));
+
+    if($n % 2 === 0){
+        printDash(($n - $i + 1));
+    }else {
+        printDash(($n - $i));
+    }
+
+    echo  PHP_EOL;
+}
+for ($i = 0; $i < $n / 2 ; $i++){
+    printDash(($n / 2 - $i));
+    printStar($n);
+    printDash((2 * $i + 1));
+    printStar(($n * 2 - 2 * $i - 1));
+    printDash( (2 * $i + 1));
+    printStar($n);
+    printDash(($n - 2 * $i - 1));
+    printStar($n);
+    printDash((2 * $i + 1));
+    printStar(($n * 2 - 2 * $i - 1));
+    printDash((2 * $i + 1));
+    printStar($n);
+    printDash(($n / 2 - $i));
+
+    echo  PHP_EOL;
+}
