@@ -20,6 +20,7 @@ for ($i = 0; $i < count($input) - 1; $i++){
     if($len === count($input)){
         $bestLen = $len;
         $bestSeq = $input[$i];
+        $len = 1;
     }
 }
 
