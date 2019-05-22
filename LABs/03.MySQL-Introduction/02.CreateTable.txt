@@ -1,0 +1,10 @@
+CREATE TABLE `students` (
+	`first_name` VARCHAR(50) NULL DEFAULT NULL,
+	`last_name` VARCHAR(50) NULL DEFAULT NULL,
+	`number` INT(11) NULL DEFAULT NULL,
+	`phone` BIGINT(20) NULL DEFAULT NULL,
+	`record_date` DATE NULL DEFAULT NULL,
+	`is_active` VARCHAR(50) NULL DEFAULT NULL
+)
+ENGINE=InnoDB
+;
